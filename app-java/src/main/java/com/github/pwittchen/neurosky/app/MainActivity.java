@@ -78,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
   private void handleSignalChange(final Signal signal) {
     switch (signal) {
       case ATTENTION:
-        tvAttention.setText(getFormattedMessage("attention: %d", signal));
+        tvAttention.setText(getFormattedMessage("attention: %d,  To get attention, just think small step!", signal));
         break;
       case MEDITATION:
-        tvMeditation.setText(getFormattedMessage("meditation: %d", signal));
+        tvMeditation.setText(getFormattedMessage("meditation: %d, To meditate, just concentrate on your breathing! ", signal));
         break;
       case BLINK:
         tvBlink.setText(getFormattedMessage("blink: %d", signal));
